@@ -8,8 +8,18 @@
 </head>
 <body>
     
+<h3>GET Data </h3>
+<p id="data"></p>
 
 
 </body>
 </html>
 <script src="../dev/URLlib.dev.js"></script>
+<script>
+var data = document.getElementById("data");
+
+GET.forEach(function(row){
+  data.innerHTML += '<br>key= '+row[0]+' | value= '+row[1];
+});
+
+</script>
