@@ -8,6 +8,8 @@
 ## javascript library to handle and manipulate the urls and get variables
 
 ```
+var data = document.getElementById("data");
+
 GET.forEach(function(row){
   data.innerHTML += '<br>key= '+row[0]+' | value= '+row[1];
   alert('key= '+row[0]+' | value= '+row[1]);
