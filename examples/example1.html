@@ -7,7 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+  <form action="example1.html" method="get">
+    <input type="text" name="name" placeholder="Enter your name"/>
+    <input type="number" name="roll-number" placeholder="Enter roll number"/>
+
+    <input type="submit" value="Submit">
+  </form>
 <h3>GET Data </h3>
 <p id="data"></p>
 
@@ -20,6 +26,7 @@ var data = document.getElementById("data");
 
 GET.forEach(function(row){
   data.innerHTML += '<br>key= '+row[0]+' | value= '+row[1];
+  alert('key= '+row[0]+' | value= '+row[1]);
 });
 
 </script>
